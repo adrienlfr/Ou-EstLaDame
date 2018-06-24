@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A8671B820DF800C000FB13F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8671B720DF800C000FB13F /* AppDelegate.swift */; };
+		7A8671BA20DF800C000FB13F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8671B920DF800C000FB13F /* ViewController.swift */; };
+		7A8671BD20DF800C000FB13F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8671BB20DF800C000FB13F /* Main.storyboard */; };
+		7A8671BF20DF800D000FB13F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8671BE20DF800D000FB13F /* Assets.xcassets */; };
+		7A8671C220DF800D000FB13F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8671C020DF800D000FB13F /* LaunchScreen.storyboard */; };
+		7A8671CC20DF8214000FB13F /* CarteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8671CA20DF8214000FB13F /* CarteCollectionViewCell.swift */; };
+		7A8671CD20DF8214000FB13F /* CarteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8671CB20DF8214000FB13F /* CarteCollectionViewCell.xib */; };
+		7A8671D020DF8517000FB13F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8671CF20DF8517000FB13F /* Game.swift */; };
+		7A8671D220DF852D000FB13F /* Carte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8671D120DF852D000FB13F /* Carte.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A8671B420DF800C000FB13F /* OùEstLaDame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OùEstLaDame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A8671B720DF800C000FB13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A8671B920DF800C000FB13F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A8671BC20DF800C000FB13F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A8671BE20DF800D000FB13F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A8671C120DF800D000FB13F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A8671C320DF800D000FB13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A8671CA20DF8214000FB13F /* CarteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteCollectionViewCell.swift; sourceTree = "<group>"; };
+		7A8671CB20DF8214000FB13F /* CarteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarteCollectionViewCell.xib; sourceTree = "<group>"; };
+		7A8671CF20DF8517000FB13F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		7A8671D120DF852D000FB13F /* Carte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carte.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A8671B120DF800C000FB13F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A8671AB20DF800C000FB13F = {
+			isa = PBXGroup;
+			children = (
+				7A8671B620DF800C000FB13F /* OùEstLaDame */,
+				7A8671B520DF800C000FB13F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A8671B520DF800C000FB13F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A8671B420DF800C000FB13F /* OùEstLaDame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A8671B620DF800C000FB13F /* OùEstLaDame */ = {
+			isa = PBXGroup;
+			children = (
+				7A8671CE20DF8507000FB13F /* Models */,
+				7A8671C920DF819A000FB13F /* Cells */,
+				7A8671B720DF800C000FB13F /* AppDelegate.swift */,
+				7A8671B920DF800C000FB13F /* ViewController.swift */,
+				7A8671BB20DF800C000FB13F /* Main.storyboard */,
+				7A8671BE20DF800D000FB13F /* Assets.xcassets */,
+				7A8671C020DF800D000FB13F /* LaunchScreen.storyboard */,
+				7A8671C320DF800D000FB13F /* Info.plist */,
+			);
+			path = "OùEstLaDame";
+			sourceTree = "<group>";
+		};
+		7A8671C920DF819A000FB13F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7A8671CA20DF8214000FB13F /* CarteCollectionViewCell.swift */,
+				7A8671CB20DF8214000FB13F /* CarteCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7A8671CE20DF8507000FB13F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A8671CF20DF8517000FB13F /* Game.swift */,
+				7A8671D120DF852D000FB13F /* Carte.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A8671B320DF800C000FB13F /* OùEstLaDame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A8671C620DF800D000FB13F /* Build configuration list for PBXNativeTarget "OùEstLaDame" */;
+			buildPhases = (
+				7A8671B020DF800C000FB13F /* Sources */,
+				7A8671B120DF800C000FB13F /* Frameworks */,
+				7A8671B220DF800C000FB13F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OùEstLaDame";
+			productName = "OùEstLaDame";
+			productReference = 7A8671B420DF800C000FB13F /* OùEstLaDame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A8671AC20DF800C000FB13F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Adrien Lefaure";
+				TargetAttributes = {
+					7A8671B320DF800C000FB13F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 7A8671AF20DF800C000FB13F /* Build configuration list for PBXProject "OùEstLaDame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A8671AB20DF800C000FB13F;
+			productRefGroup = 7A8671B520DF800C000FB13F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A8671B320DF800C000FB13F /* OùEstLaDame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A8671B220DF800C000FB13F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A8671C220DF800D000FB13F /* LaunchScreen.storyboard in Resources */,
+				7A8671BF20DF800D000FB13F /* Assets.xcassets in Resources */,
+				7A8671CD20DF8214000FB13F /* CarteCollectionViewCell.xib in Resources */,
+				7A8671BD20DF800C000FB13F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A8671B020DF800C000FB13F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A8671CC20DF8214000FB13F /* CarteCollectionViewCell.swift in Sources */,
+				7A8671BA20DF800C000FB13F /* ViewController.swift in Sources */,
+				7A8671B820DF800C000FB13F /* AppDelegate.swift in Sources */,
+				7A8671D020DF8517000FB13F /* Game.swift in Sources */,
+				7A8671D220DF852D000FB13F /* Carte.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7A8671BB20DF800C000FB13F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A8671BC20DF800C000FB13F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A8671C020DF800D000FB13F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A8671C120DF800D000FB13F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A8671C420DF800D000FB13F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A8671C520DF800D000FB13F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A8671C720DF800D000FB13F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YGXU8DX4B5;
+				INFOPLIST_FILE = "OùEstLaDame/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.adrienlfr.Ou-EstLaDame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A8671C820DF800D000FB13F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YGXU8DX4B5;
+				INFOPLIST_FILE = "OùEstLaDame/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.adrienlfr.Ou-EstLaDame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A8671AF20DF800C000FB13F /* Build configuration list for PBXProject "OùEstLaDame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A8671C420DF800D000FB13F /* Debug */,
+				7A8671C520DF800D000FB13F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A8671C620DF800D000FB13F /* Build configuration list for PBXNativeTarget "OùEstLaDame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A8671C720DF800D000FB13F /* Debug */,
+				7A8671C820DF800D000FB13F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A8671AC20DF800C000FB13F /* Project object */;
+}
