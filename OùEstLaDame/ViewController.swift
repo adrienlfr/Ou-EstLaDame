@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class ViewController: UIViewController {
     
     @IBOutlet weak var collectionViewPlateau: UICollectionView!
     
@@ -37,30 +37,31 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collectionViewPlateau.collectionViewLayout.invalidateLayout()
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return jeu.cartes.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionViewPlateau.dequeueReusableCell(withReuseIdentifier: identifierCell, for: indexPath) as! CarteCollectionViewCell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let nbCarteParLigne = CGFloat(Float(jeu.cartes.count).squareRoot().rounded(.down)).rounded(.up)
-        let nbCarteParColonne = CGFloat(Float(jeu.cartes.count).squareRoot().rounded(.up)).rounded(.up)
-        let height = collectionViewPlateau.frame.height / nbCarteParLigne
-        let widht = collectionViewPlateau.frame.width / nbCarteParColonne
-        return CGSize(width: widht, height: height)
-    }
-    
     func rangerLePlateau() {
         for carteCell in collectionViewPlateau.visibleCells {
             if let cell = carteCell as? CarteCollectionViewCell, cell.imageViewDame.image != #imageLiteral(resourceName: "dos") {
                 cell.ranger()
             }
         }
-        jeu.initGame(nombreDeCarte: nombreDeCartes)
-        collectionViewPlateau.collectionViewLayout.invalidateLayout()
+    }
+}
+
+extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return jeu.cartes.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return collectionView.dequeueReusableCell(withReuseIdentifier: identifierCell, for: indexPath) as! CarteCollectionViewCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let nbCarteParLigneEtColonne = CGFloat(jeu.cartes.count).squareRoot().rounded(.up)
+        let spacingLine = (collectionView.collectionViewLayout as! UICollectionViewFlowLayout).minimumLineSpacing
+        let spacingCell = (collectionView.collectionViewLayout as! UICollectionViewFlowLayout).minimumInteritemSpacing
+        let height = (collectionView.frame.height - (spacingCell * (nbCarteParLigneEtColonne - 1))) / nbCarteParLigneEtColonne
+        let widht = (collectionView.frame.width - (spacingLine * (nbCarteParLigneEtColonne - 1))) / nbCarteParLigneEtColonne
+        return CGSize(width: widht.rounded(.down), height: height.rounded(.down))
     }
 }
 
@@ -77,8 +78,9 @@ extension ViewController: UIGestureRecognizerDelegate {
             let estDameDeCoeur = jeu.dameDeCoeurEstEn(position: tupleCell.0.row)
             tupleCell.1.tourner(estDameDeCoeur: estDameDeCoeur)
             if estDameDeCoeur {
-                Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { (t) in
+                Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { (_) in
                     self.rangerLePlateau()
+                    self.jeu.initGame(nombreDeCarte: self.nombreDeCartes)
                 }
             }
         }
